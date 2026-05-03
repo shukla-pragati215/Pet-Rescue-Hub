@@ -1,0 +1,247 @@
+/* ===== GLOBAL ===== */
+.adopt-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #f6f9fc, #eef3ff);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== MAIN CONTAINER (FULL SCREEN) ===== */
+.pet-container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  padding: 40px 60px;
+}
+
+/* Center content but wide for laptops */
+.pet-container > * {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== TITLES ===== */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+/* ===== TABS ===== */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.tab {
+  padding: 14px 34px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  transform: translateY(-4px);
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+/* ===== SEARCH ===== */
+.search-row {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 16px 45px 16px 22px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.clear-btn {
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ===== SUGGESTIONS ===== */
+.suggestions {
+  background: rgb(174, 210, 212);
+  border-radius: 18px;
+  margin-top: 10px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+  overflow: hidden;
+}
+
+.suggestion {
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.suggestion:hover {
+  background: #bcc6ee;
+}
+
+/* ===== CONTENT CARD ===== */
+.content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1.2fr 2.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.pet-image {
+  font-size: 8rem;
+  text-align: center;
+  background: rgb(189, 187, 187);
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.food-section {
+  background: rgb(212, 205, 205);
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.food-section h3 {
+  margin-bottom: 18px;
+}
+
+.food-section ul {
+  padding-left: 22px;
+}
+
+.food-section li {
+  margin-bottom: 10px;
+}
+
+/* ===== PORTION & NOTES ===== */
+.portion,
+.notes {
+  margin-top: 14px;
+  padding: 14px;
+  background: #b8c1eb;
+  border-radius: 14px;
+}
+
+/* ===== TABLE ===== */
+.chart-title {
+  text-align: center;
+  margin: 60px 0 25px;
+}
+
+.diet-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+}
+
+.diet-table th {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 16px;
+}
+
+.diet-table td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #a39e9e;
+}
+
+/* ===== TIPS ===== */
+.tips-title {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.tips-list {
+  max-width: 900px;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.tips-list li {
+  background: rgb(194, 176, 176);
+  margin-bottom: 14px;
+  padding: 16px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== QUICK REF ===== */
+.quick-ref {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.quick-item {
+  padding: 16px 28px;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.quick-item:hover {
+  transform: scale(1.08);
+}
+
+.quick-section {
+  max-width: 900px;
+  margin: 35px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .pet-container {
+    padding: 30px 20px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .pet-image {
+    font-size: 6rem;
+  }
+}

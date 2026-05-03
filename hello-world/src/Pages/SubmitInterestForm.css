@@ -1,0 +1,236 @@
+.interest-form {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  width: 400px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  animation: popupFade 0.3s ease-in-out;
+  position: relative;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-header h2 {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #444;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #3b82f6;
+}
+
+.submit-btn {
+  background: #3b82f6;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #2563eb;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;  /* ✅ scroll allowed inside overlay */
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  max-height: 90vh;   /* ✅ restrict popup height */
+  overflow-y: auto;   /* ✅ internal scroll if content large */
+}
+/* 🔹 Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* 🔹 Popup Box */
+.popup-content {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  width: 40%;               /* ✅ broader form */
+  max-width: 800px;         /* ✅ limit for large screens */
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: popupFade 0.3s ease-in-out;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* 🔹 Popup Header */
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.popup-header h2 {
+  font-size: 1.6rem;
+  color: #2b7a78;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #2b7a78;
+}
+
+/* 🔹 Form Styling */
+.find-pet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #2b7a78;
+}
+
+/* 🔹 Submit Button */
+.search-btn {
+  background-color: #2b7a78;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  align-self: center;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #205e5c;
+}
+
+/* 🔹 Animation */
+@keyframes popupFade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+  .popup-content {
+    width: 90%;
+    padding: 25px;
+  }
+}

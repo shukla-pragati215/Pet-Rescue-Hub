@@ -1,0 +1,134 @@
+/* Full page background */
+.appointment-container {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #eef3ff, #e6eeff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main card (centered form box) */
+.appointment-container > div,
+.appointment-container form {
+  width: 100%;
+}
+
+/* Wrapper */
+.appointment-container {
+  flex-direction: column;
+}
+
+/* Page heading */
+.appointment-container h2 {
+  font-size: 32px;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Doctor info box */
+.doctor-info {
+  width: 600px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.doctor-info h3 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.doctor-info p {
+  font-size: 15px;
+  color: #4b5563;
+  margin: 4px 0;
+}
+
+/* Form container */
+.appointment-form {
+  width: 600px;
+  background: #ffffff;
+  padding: 30px 28px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Two-column layout for laptop */
+.appointment-form input,
+.appointment-form textarea {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 18px;
+  border-radius: 9px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+/* Date & time row */
+.appointment-form input[type="date"],
+.appointment-form input[type="time"] {
+  width: 48%;
+}
+
+.appointment-form input[type="date"] {
+  margin-right: 4%;
+}
+
+/* Textarea */
+.appointment-form textarea {
+  resize: none;
+  min-height: 110px;
+}
+
+/* Focus */
+.appointment-form input:focus,
+.appointment-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Button */
+.appointment-form button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.appointment-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+.appointment-form button:active {
+  transform: scale(0.97);
+}
+
+/* Responsive fallback (tablet/mobile) */
+@media (max-width: 768px) {
+  .doctor-info,
+  .appointment-form {
+    width: 100%;
+  }
+
+  .appointment-form input[type="date"],
+  .appointment-form input[type="time"] {
+    width: 100%;
+    margin-right: 0;
+  }
+}

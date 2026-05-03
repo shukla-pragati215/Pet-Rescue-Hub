@@ -1,0 +1,599 @@
+/* Main container */
+.adopt-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Hero Section */
+.adopt-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #7c43e6;
+  padding: 40px;
+}
+
+.hero-left {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-left h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-left h1 span {
+  color: #444;
+}
+
+.hero-left p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  text-decoration-color: #f0eaea;
+}
+
+.hero-buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-btn {
+  background: #e76f51;
+  color: #fff;
+}
+
+.adopt-btn {
+  background: #333;
+  color: #fff;
+}
+
+.hero-right img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* Categories Section */
+.categories {
+  padding: 40px 20px;
+}
+
+.categories h2 {
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.category-card {
+  background: #b5d7f3;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.category-card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* Available Pets Section */
+.available-pets {
+  padding: 40px 20px;
+  background: #ecd0d0;
+}
+
+.available-pets h2 {
+  margin-bottom: 20px;
+}
+
+.pets-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pet-card {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pet-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.pet-card h3 {
+  margin: 5px 0;
+}
+
+.pet-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.pet-card .adopt-btn {
+  background: #e76f51;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Volunteer & Donate Section */
+.volunteer-donate {
+  display: flex;
+  justify-content: space-between;
+  background: #f0eaea;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.volunteer, .donate {
+  flex: 1;
+}
+
+.volunteer-btn, .donate-btn {
+  background: #e76f51;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #e76f51;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 14px;
+}
+
+.hero-right {
+  width: -10px;
+  margin-left: -200px;
+}
+
+.adopt-hero {
+  background: url("pet-bg.webp") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.adopt-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* backdrop */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding-top: 80px; /* upar se thoda neeche */
+  z-index: 999;
+}
+
+.adopt-popup-content {
+  background: #fff;
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.adopt-popup-content h2 {
+  margin-bottom: 15px;
+}
+
+.application-btn {
+  background-color: #2f5d2f;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.application-btn:hover {
+  background-color: #244a24;
+}
+
+.close-btn {
+  margin-top: 15px;
+  background: #d9534f;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #b52b27;
+}
+
+.adopt-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+  z-index: 999;
+}
+
+.adopt-popup-content {
+  background: #fff;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.adopt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.adopt-form h2 {
+  text-align: center;
+}
+
+.adopt-form label {
+  font-weight: bold;
+}
+
+.adopt-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+.close-btn {
+  margin-top: 10px;
+  background: #d9534f;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #b52b27;
+}
+
+
+
+
+.pets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* 3 fix columns */
+  justify-content: center;  /* center align karega */
+  gap: 25px;
+   margin-top: 20px;
+
+  margin-left: 100px; 
+}
+
+/* Popup background */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup box */
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  position: relative;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-bottom: 15px;
+}
+
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-content label {
+  margin: 5px 0 3px;
+  text-align: left;
+}
+
+.popup-content input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-btn {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: darkgreen;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.footer {
+  width: fit-content;   /* content jitna hi space lega */
+  margin-left: auto;    /* poora footer right side chala jayega */
+  margin-right: 20px;   /* thoda gap from right edge */
+}
+.footer {
+  width: 100%;         
+  text-align: right;   /* andar ke sab elements right side */
+  padding: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;  /* left aur right me divide ho jayega */
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.footer {
+  background-color: yellow;
+  padding: 30px;
+  color: rgb(248, 232, 7);
+}
+
+/* Overlay background */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup box */
+.popup-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Header with title and close button */
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Close button */
+.close-btn {
+  background-color: #ff5c5c;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Form layout */
+.find-pet-form .form-group {
+  margin-bottom: 15px;
+}
+
+.find-pet-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.find-pet-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Search button */
+.search-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bottom-section,
+.footer,
+.volunteer-section {
+  background-color: #ffffff !important; /* White background */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: hsl(43, 100%, 45%); /* yellow background */
+  color: #fff9f9;
+  width: 200px;           /* full length (left se right tak) */
+  min-height: 80px;      /* kam height */
+  padding: 15px 30px;    /* andar ka space kam kar diya */
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  width: 100vw;   /* poora viewport width cover karega */
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+.footer {
+  min-height: 60px;    /* fixed strip jaisa */
+  padding: 10px 20px;  /* andar ka gap kam */
+}
+.footer {
+  width: 100vw !important;
+  min-height: 60px !important;
+  padding: 10px 20px !important;
+}
+.footer {
+  background-color: yellow; /* background yellow */
+  padding: 20px;
+  text-align: center;
+}
+.footer {
+  background-color: yellow;
+  padding: 30px;
+  color: black;
+}
+.petdoctors-footer {
+  background-color: yellow;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top:100px; /* हमेशा bottom पर जाएगा */
+  position: relative; /* नीचे stick नहीं रहेगा */
+}
+
+.footer {
+  max-width: 1200px;   /* jitni width chahiye utni fix karlo */
+  margin: 0 auto;      /* center align ho jayega */
+  padding: 20px;
+}
+.footer {
+  padding-right: 60px;  /* right side se andar le aayega */
+}
+.popup-header {
+  position: relative;
+}
+
+/* Close (X) button – remove white */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 34px;
+  height: 34px;
+
+  background: #ff5a5f !important;   /* 🔴 CHANGE white → red */
+  color: #ffffff !important;        /* White X */
+
+  border: none;
+  border-radius: 50%;
+
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover */
+.close-btn:hover {
+  background: #e63946;
+}

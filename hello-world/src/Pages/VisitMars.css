@@ -1,0 +1,39 @@
+.mars-container {
+  padding: 60px 80px;
+  background-color: #fffaf0;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.mars-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mars-header h1 {
+  color: #e67300;
+  font-size: 2.5rem;
+}
+
+.mars-content h2 {
+  color: #e67300;
+  margin-top: 20px;
+}
+
+.mars-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background-color: #e67300;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.mars-link:hover {
+  background-color: #cc5c00;
+}
+.visitmars {
+  background-color: white;
+}

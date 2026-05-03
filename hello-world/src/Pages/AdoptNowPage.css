@@ -1,0 +1,173 @@
+/* Container fills the screen */
+.adopt-container {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff5e6, #fdfdfd);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff914d;
+  padding: 20px 60px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #ffe5b4;
+}
+
+/* Full-screen form section */
+.form-container {
+  flex: 1; /* take all available space */
+  padding: 40px 80px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #ff914d;
+  margin-bottom: 30px;
+}
+
+/* Grid layout across full width */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 40px;
+  width: 100%;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Full-width fields */
+form textarea:nth-of-type(2),
+form select,
+.submit-btn {
+  grid-column: span 2;
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 16px;
+  background: #ff914d;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #ff7b2d;
+  transform: scale(1.05);
+}
+
+/* Thank You Popup */
+.thankyou-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex; justify-content: center; align-items: center;
+}
+
+.thankyou-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ff914d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #ff7b2d;
+}
+
+/* Footer */
+.lostfound-footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+.lostfound-footer a {
+  color: #ff914d;
+  margin: 0 15px;
+  text-decoration: none;
+}
+/* Footer Styling */
+.lostfound-footer {
+  background: #1f1f1f;          /* dark background for contrast */
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 -4px 8px rgba(0,0,0,0.1); /* subtle top shadow */
+}
+
+.lostfound-footer a {
+  color: #ff914d;               /* brand accent color */
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.lostfound-footer a:hover {
+  color: #ffe5b4;               /* lighter hover color */
+  transform: scale(1.1);        /* subtle zoom effect */
+}
+
+/* Optional: spacing between links on smaller screens */
+@media (max-width: 768px) {
+  .lostfound-footer a {
+    display: block;
+    margin: 8px 0;
+  }
+}

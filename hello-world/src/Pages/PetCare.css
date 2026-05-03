@@ -1,0 +1,94 @@
+.petcare-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 500px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.card {
+  background: #e6f0ff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+/* ✅ Footer – force override */
+.lostfound-container .lostfound-footer {
+  width: 100%;
+  margin-top: 40px;
+  padding: 18px 0 !important;
+
+  background: linear-gradient(135deg, #ff9800, #ff6f00) !important;
+  border-top: none !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 40px !important;
+
+  text-align: center !important;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.lostfound-container .lostfound-footer a {
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.lostfound-container .lostfound-footer a:hover {
+  color: #111 !important;
+  transform: scale(1.08);
+  text-decoration: underline !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .lostfound-container .lostfound-footer {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+}

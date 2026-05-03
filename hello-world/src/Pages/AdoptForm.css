@@ -1,0 +1,272 @@
+.adoptform-container {
+  width: 100%;             /* Full width for laptop screen */
+  max-width: 100%;         /* Remove max width */
+  margin: 0 auto;          /* Center horizontally if needed */
+  padding: 40px 60px;      /* Desktop-friendly padding */
+  background-color: #f9f9f9;
+  text-align: left;
+  min-height: 100vh;       /* Full viewport height */
+  box-sizing: border-box;
+}
+
+.pet-details {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.pet-details img {
+  width: 300px;             /* Larger image for laptop */
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.pet-info p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 14px 26px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4caf50;
+  font-size: 16px;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Make pet info section flexible on large screens */
+@media (min-width: 1200px) {
+  .pet-details {
+    justify-content: center;
+  }
+}
+.adoptform-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.pet-details {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* responsive for smaller screens */
+}
+
+.pet-image {
+  flex: 1; /* Left side image */
+  max-width: 350px;
+}
+
+.pet-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.pet-info-form {
+  flex: 2; /* Right side info + form */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pet-info p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 14px 26px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4caf50;
+  font-size: 16px;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 992px) {
+  .pet-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pet-image, .pet-info-form {
+    flex: unset;
+    width: 100%;
+  }
+}
+.adoptform-container {
+  width: 100%;
+  max-width: 1200px; /* Laptop screen optimized */
+  margin: 0 auto;
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.pet-details {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Responsive for smaller screens */
+}
+
+.pet-details img {
+  flex: 1;               /* Image on left */
+  max-width: 400px;      /* Limit image width */
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.pet-info {
+  flex: 2;               /* Info and form on right */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pet-info p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 14px 26px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #4caf50;
+  font-size: 16px;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 992px) {
+  .pet-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pet-details img, .pet-info {
+    flex: unset;
+    width: 100%;
+  }
+}

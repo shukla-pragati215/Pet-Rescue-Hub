@@ -1,0 +1,60 @@
+.modern-slavery-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #333;
+  min-height: 100vh;
+}
+
+
+
+/* Main Content */
+.modern-slavery-content {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modern-slavery-content h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modern-slavery-content h3 {
+  font-size: 20px;
+  color: #444;
+  margin-top: 25px;
+  border-left: 4px solid #f6b6b6;
+  padding-left: 10px;
+}
+
+.modern-slavery-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modern-slavery-content {
+    padding: 25px 20px;
+    margin: 30px 10px;
+  }
+
+  .modern-slavery-content h1 {
+    font-size: 26px;
+  }
+
+  .modern-slavery-content h3 {
+    font-size: 18px;
+  }
+
+  .modern-slavery-content p {
+    font-size: 15px;
+  }
+}

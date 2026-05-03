@@ -1,0 +1,105 @@
+.payment-success-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffe4e6 50%, #fef3c7 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.success-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.7s ease;
+}
+
+.success-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+}
+
+.success-card h1 {
+  font-size: 2rem;
+  color: #15803d;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.success-card p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+
+.success-card strong {
+  color: #111827;
+}
+
+.home-btn {
+  margin-top: 26px;
+  padding: 13px 28px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff6b6b, #f97316);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(249, 115, 22, 0.25);
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(249, 115, 22, 0.32);
+}
+
+.home-btn:active {
+  transform: scale(0.98);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .success-card {
+    padding: 30px 20px;
+    border-radius: 18px;
+  }
+
+  .success-card h1 {
+    font-size: 1.6rem;
+  }
+
+  .success-card p {
+    font-size: 0.95rem;
+  }
+
+  .home-btn {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}

@@ -1,0 +1,280 @@
+.volunteers-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6f8fc, #eef2ff);
+  font-family: "Poppins", sans-serif;
+}
+
+/* MAIN */
+.volunteers-container {
+  padding: 32px;
+}
+
+.page-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-top h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #1f2937;
+}
+
+.sub-text {
+  color: #6b7280;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* SUMMARY CARDS */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.summary-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-4px);
+}
+
+.summary-card h3 {
+  margin: 0;
+  font-size: 30px;
+  color: #111827;
+}
+
+.summary-card p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.new-card {
+  border-left: 5px solid #f59e0b;
+}
+
+.contacted-card {
+  border-left: 5px solid #06b6d4;
+}
+
+.closed-card {
+  border-left: 5px solid #22c55e;
+}
+
+/* FILTERS */
+.volunteers-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.volunteers-header input,
+.volunteers-header select {
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  min-width: 240px;
+  transition: 0.3s ease;
+}
+
+.volunteers-header input:focus,
+.volunteers-header select:focus {
+  border-color: #cfcfd1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+/* TABLE */
+.table-wrapper {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+.volunteers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.volunteers-table thead {
+  background: linear-gradient(90deg, #c8c4df, #897ca5);
+}
+
+.volunteers-table th {
+  color: #fff;
+  text-align: left;
+  padding: 16px 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.volunteers-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #edf2f7;
+  vertical-align: middle;
+}
+
+.volunteers-table tbody tr:hover {
+  background: #f8faff;
+}
+
+.name-cell {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.email-cell {
+  color: #4b5563;
+  word-break: break-word;
+}
+
+/* STATUS */
+.status {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.new {
+  background: #fff7e6;
+  color: #b45309;
+}
+
+.status.contacted {
+  background: #ecfeff;
+  color: #0f766e;
+}
+
+.status.closed {
+  background: #ecfdf5;
+  color: #15803d;
+}
+
+/* BUTTONS */
+.action-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.icon-btn,
+.text-btn {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-btn {
+  padding: 10px 12px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.email-btn {
+  background: #2563eb;
+}
+
+.copy-btn {
+  background: #7c3aed;
+}
+
+.contacted-btn {
+  background: #0891b2;
+}
+
+.close-btn {
+  background: #dc2626;
+}
+
+.reopen-btn {
+  background: #f59e0b;
+}
+
+.delete-btn {
+  background: #374151;
+}
+
+.icon-btn:hover,
+.text-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+.no-data {
+  text-align: center;
+  padding: 28px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .volunteers-container {
+    padding: 20px;
+  }
+
+  .volunteers-table th,
+  .volunteers-table td {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-navbar {
+    padding: 14px 18px;
+  }
+
+  .page-top h2 {
+    font-size: 23px;
+  }
+
+  .summary-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .volunteers-table {
+    min-width: 900px;
+  }
+}
+
+@media (max-width: 480px) {
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+}

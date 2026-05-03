@@ -1,0 +1,166 @@
+.volunteer-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #222;
+}
+
+/* Header Section */
+.volunteer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.header-left {
+  flex: 1;
+  padding-right: 20px;
+}
+.header-left h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.header-left p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.tags span {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 12px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.btn-black {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.header-right img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* Impact Section */
+.impact-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+.impact-section h2 {
+  font-size: 22px;
+  color: #111;
+}
+
+/* Why Volunteer */
+.why-section {
+  margin: 40px 0;
+}
+.why-section h2 {
+  margin-bottom: 20px;
+}
+.why-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.why-cards div {
+  width: 30%;
+}
+
+/* How It Works */
+.how-section {
+  margin: 40px 0;
+}
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.steps div {
+  width: 45%;
+}
+blockquote {
+  font-style: italic;
+  background: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #ccc;
+}
+
+/* Bottom Section */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.apply-now {
+  width: 50%;
+}
+.apply-now form {
+  display: flex;
+  flex-direction: column;
+}
+.apply-now input {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.apply-now button {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.faq {
+  width: 40%;
+}
+.form-message {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.form-message strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.form-message p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.success-message {
+  background: #ecfdf3;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.error-message {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.apply-now button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

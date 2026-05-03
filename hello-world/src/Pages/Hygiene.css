@@ -1,0 +1,194 @@
+/* General Page Styling */
+.adopt-container {
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4cafef;
+  padding: 12px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #222;
+}
+
+.signup-btn {
+  background: #ff9800;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.login-link {
+  margin-right: 10px;
+}
+
+/* Main Container */
+.hygiene-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Image */
+.image-container {
+  margin: 20px 0;
+}
+
+.hygiene-image {
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Hygiene Tips */
+.hygiene-tips {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.hygiene-tips h2 {
+  color: #4cafef;
+  margin-bottom: 8px;
+}
+
+.hygiene-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hygiene-tips ul li {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+/* Grooming Schedule Table */
+.hygiene-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.hygiene-table th,
+.hygiene-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.hygiene-table th {
+  background-color: #4cafef;
+  color: white;
+  font-weight: bold;
+}
+
+.hygiene-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.hygiene-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Price & Services Section */
+.price-section {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.price-section h2 {
+  text-align: center;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.price-table th {
+  background: #ff9800;
+  color: #fff;
+}
+
+.price-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Product List */
+.product-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.product-list li {
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-list li:hover {
+  transform: translateY(-5px);
+  background: #f7faff;
+}
+
+/* Footer */
+.lostfound-footer {
+  background: #cde953;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.lostfound-footer a {
+  color: #ff9800;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+}

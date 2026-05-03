@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Left Section */
+.left-section {
+  background-color: #f8f6f6;
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+}
+
+.left-section h1 {
+  font-size: 28px;
+  color: #6b2d2d;
+}
+
+.left-section h1 span {
+  color: #a03e3e;
+  font-weight: bold;
+}
+
+.left-section p {
+  color: #5a4d4d;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.dog-image {
+  margin-top: 30px;
+  max-width: 200px;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  background: url("pet-bg.webp") no-repeat center center;
+  background-size: cover;
+  padding: 60px;
+  color: #333;
+}
+
+/* Form container look */
+.right-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+
+.right-section h2 {
+  color: #6b2d2d;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.tab-buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tab-buttons .active {
+  background-color: #a03e3e;
+  color: white;
+}
+
+.tab-buttons .inactive {
+  background-color: #d9c3a0;
+  color: black;
+}
+
+/* Labels & Inputs */
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #a03e3e;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #8b2f2f;
+}
+
+/* Signup text */
+.signup-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.signup-text span {
+  color: #a03e3e;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-text span:hover {
+  text-decoration: underline;
+}

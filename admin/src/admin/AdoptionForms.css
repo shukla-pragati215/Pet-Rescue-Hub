@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.adoption-forms-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Top Navbar */
+.dashboard-navbar {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e9eef5;
+  border-radius: 20px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  margin-bottom: 22px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #6d5dfc, #4f46e5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.22);
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e1b4b;
+  margin-bottom: 2px;
+}
+
+.logo-subtext {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-icon {
+  color: #5b4df1;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.08);
+  color: #4338ca;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 220px;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 16px;
+  padding: 14px 16px;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.12);
+  z-index: 20;
+}
+
+.profile-dropdown p {
+  margin: 0;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.profile-dropdown .email {
+  margin-top: 5px;
+  color: #64748b;
+  word-break: break-word;
+}
+
+/* Main Container */
+.adoption-forms-container {
+  width: 100%;
+}
+
+.page-top {
+  margin-bottom: 18px;
+}
+
+.page-top h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.sub-text {
+  font-size: 15px;
+  color: #64748b;
+}
+
+/* Card */
+.table-card {
+  width: 100%;
+  max-width: 100%;
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #e8edf5;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+/* Table */
+.adoption-forms-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.adoption-forms-table thead {
+  background: #ffffff;
+}
+
+.adoption-forms-table thead th {
+  padding: 18px 12px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.adoption-forms-table tbody tr {
+  border-bottom: 1px solid #edf2f7;
+  transition: 0.2s ease;
+}
+
+.adoption-forms-table tbody tr:hover {
+  background: #fafbff;
+}
+
+.adoption-forms-table tbody td {
+  padding: 18px 12px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #334155;
+  overflow: hidden;
+}
+
+/* Column widths */
+.adoption-forms-table th:nth-child(1),
+.adoption-forms-table td:nth-child(1) {
+  width: 14%;
+}
+
+.adoption-forms-table th:nth-child(2),
+.adoption-forms-table td:nth-child(2) {
+  width: 14%;
+}
+
+.adoption-forms-table th:nth-child(3),
+.adoption-forms-table td:nth-child(3) {
+  width: 11%;
+}
+
+.adoption-forms-table th:nth-child(4),
+.adoption-forms-table td:nth-child(4) {
+  width: 9%;
+}
+
+.adoption-forms-table th:nth-child(5),
+.adoption-forms-table td:nth-child(5) {
+  width: 5%;
+}
+
+.adoption-forms-table th:nth-child(6),
+.adoption-forms-table td:nth-child(6) {
+  width: 8%;
+}
+
+.adoption-forms-table th:nth-child(7),
+.adoption-forms-table td:nth-child(7) {
+  width: 10%;
+}
+
+.adoption-forms-table th:nth-child(8),
+.adoption-forms-table td:nth-child(8) {
+  width: 10%;
+}
+
+/* Pet Cell */
+.pet-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.pet-thumb {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #eef2ff;
+  border: 1px solid #dbe3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pet-fallback-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #5b4df1;
+  background: linear-gradient(135deg, #eef2ff, #ede9fe);
+}
+
+.pet-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.muted-text {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.5;
+  display: block;
+}
+
+/* Applicant */
+.applicant-cell {
+  min-width: 0;
+}
+
+.applicant-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+
+/* Text wrapping */
+.email-text,
+.address-text,
+.message-text {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+/* Status */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.status-badge.pending {
+  background: #fff7ed;
+  color: #ea580c;
+  border-color: #fed7aa;
+}
+
+.status-badge.approved {
+  background: #ecfdf5;
+  color: #059669;
+  border-color: #a7f3d0;
+}
+
+.status-badge.rejected {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+/* Manage buttons */
+.action-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.text-btn {
+  border: none;
+  outline: none;
+  min-width: 90px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: 0.25s ease;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.approve-btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.reject-btn {
+  background: #ffffff;
+  color: #ef4444;
+  border: 1px solid #fecaca;
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #334155, #1e293b);
+}
+
+.text-btn:hover {
+  transform: translateY(-1px);
+}
+
+.text-btn svg {
+  font-size: 12px;
+}
+
+/* Empty state */
+.no-data {
+  text-align: center;
+  padding: 30px 15px !important;
+  color: #64748b;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .adoption-forms-page {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    padding: 16px;
+  }
+
+  .dashboard-navbar {
+    padding: 16px 18px;
+  }
+
+  .page-top h2 {
+    font-size: 24px;
+  }
+
+  .adoption-forms-table {
+    table-layout: auto;
+    min-width: 980px;
+  }
+
+  .table-card {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .adoption-forms-page {
+    margin-left: 0;
+    width: 100%;
+    padding: 14px;
+  }
+
+  .dashboard-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .page-top h2 {
+    font-size: 22px;
+  }
+
+  .adoption-forms-table {
+    min-width: 950px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .logo-badge {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .sub-text {
+    font-size: 14px;
+  }
+
+  .adoption-forms-table {
+    min-width: 900px;
+  }
+}
