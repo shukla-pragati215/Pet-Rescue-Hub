@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 function AboutUs() {
   const navigate = useNavigate();
 const user = JSON.parse(localStorage.getItem("user"));

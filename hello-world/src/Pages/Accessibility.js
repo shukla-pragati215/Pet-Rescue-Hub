@@ -2,9 +2,11 @@ import React from "react";
 import "./Accessibility.css";
 import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
-import { useState, navigate } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Accessibility() {
+  const navigate = useNavigate();
    const user = JSON.parse(localStorage.getItem("user")); // ✅ ADD THIS
       const [showProfile, setShowProfile] = useState(false);
     
